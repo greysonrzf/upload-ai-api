@@ -29,7 +29,7 @@ POST http://localhost:3333/ai/generate
 Content-Type: application/json
 
 {
-  "videoId": "04f2629a-04c1-480d-a5ff-fb300fe206cc",
+  "videoId": "638446c8-f413-4ef8-b79c-5a45ab50df02",
   "temperature": 0.5,
-  "prompt": "Gere um resumo sucinto da transcrição do vídeo informada a seguir: '''{transcription}'''"
+  "prompt": "Analise a transcrição do vídeo e escreva conforme instruções abaixo: Um titulo com até 60 caracteres; Uma breve descrição com até 120 caracteres focando nas área que a vida da pessoa poderá ser mudada com essa mensagem; Um resumo sucinto sobre a mensagem; Crie todas as categorias que puder encontrar nas quais a mensagem do texto poderia ser benéfica para o leitor, por exemplo, pessoas que sofrem de depressão poderiam se beneficiar deste texto, então uma categoria poderia ser depressão, pessoas com doenças poderiam se beneficiar deste texto, então outra categoria poderia ser saúde, pessoas com problemas financeiros poderiam se beneficiar deste texto, então outra categoria poderia ser, prosperidade e assim por diante como família, trabalho, ansiedade, medo e etc; Liste todos os livros, capítulos e versiculos citados na mensagem por ordem de citação. '''{transcription}'''"
 }

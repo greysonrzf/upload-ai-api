@@ -7,16 +7,13 @@ async function main() {
   await prisma.prompt.create({
     data: {
       title: 'Análise Completa do Vídeo',
-      template: `Criar título, descrição, resumo, definir categorias e listar citações a partir da transcrição do vídeo.
-
-Analise a transcrição do vídeo e escreva conforme instruções abaixo:
-'''
+      template: `Analise a transcrição do vídeo e escreva conforme instruções abaixo:
 - Um titulo com até 60 caracteres 
-- Uma breve descrição com até 120 caracteres focando nas área que a vida da pessoa poderá ser mudada com essa mensagem
-- Um resumo sucinto sobre a mensagem
-- Crie todas as categorias que puder encontrar nas quais a mensagem do texto poderia ser benéfica para o leitor, por exemplo, pessoas que sofrem de depressão poderiam se beneficiar deste texto, então uma categoria poderia ser "depressão", pessoas com doenças poderiam se beneficiar deste texto, então outra categoria poderia ser "saúde", pessoas com problemas financeiros poderiam se beneficiar deste texto, então outra categoria poderia ser, "prosperidade" e assim por diante como "família", "trabalho", "ansiedade", "medo" e etc.  
+- Uma breve descrição com até 120 caracteres focando nas área que a vida da pessoa poderá ser transformada para melhor com essa mensagem
+- Um resumo sobre a mensagem, refletindo sobre as lições de cada citação da biblía
+- Escreva 3 categorias sobre os principais temas apresentados na mensagem, por exemplo: depressão, ansiedade, medo, insegurança, trabalho, saúde, família, prosperidade e etc.  
 - Liste todos os livros, capítulos e versiculos citados na mensagem por ordem de citação.
-'''
+
 
 Transcrição:
 '''
